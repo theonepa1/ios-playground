@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D041133E222CAB36003032F1 /* PMViewUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = D041133D222CAB36003032F1 /* PMViewUtils.m */; };
+		D0411341222CACB1003032F1 /* PMCollectionViewDemoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0411340222CACB1003032F1 /* PMCollectionViewDemoCell.m */; };
 		D0D49CEE222CA7C900CF1B91 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0D49CED222CA7C900CF1B91 /* AppDelegate.m */; };
 		D0D49CF4222CA7C900CF1B91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0D49CF2222CA7C900CF1B91 /* Main.storyboard */; };
 		D0D49CF6222CA7CA00CF1B91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0D49CF5222CA7CA00CF1B91 /* Assets.xcassets */; };
@@ -18,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D041133C222CAB36003032F1 /* PMViewUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMViewUtils.h; sourceTree = "<group>"; };
+		D041133D222CAB36003032F1 /* PMViewUtils.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMViewUtils.m; sourceTree = "<group>"; };
+		D041133F222CACB1003032F1 /* PMCollectionViewDemoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMCollectionViewDemoCell.h; sourceTree = "<group>"; };
+		D0411340222CACB1003032F1 /* PMCollectionViewDemoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMCollectionViewDemoCell.m; sourceTree = "<group>"; };
 		D0D49CE9222CA7C900CF1B91 /* MyPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0D49CEC222CA7C900CF1B91 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0D49CED222CA7C900CF1B91 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -45,6 +51,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D0411342222CAD27003032F1 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				D0411344222CAD4F003032F1 /* ViewData */,
+				D0D49D08222CA94700CF1B91 /* PMCollectionViewDemoViewController.h */,
+				D0D49D09222CA94700CF1B91 /* PMCollectionViewDemoViewController.m */,
+				D041133F222CACB1003032F1 /* PMCollectionViewDemoCell.h */,
+				D0411340222CACB1003032F1 /* PMCollectionViewDemoCell.m */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		D0411343222CAD39003032F1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D041133C222CAB36003032F1 /* PMViewUtils.h */,
+				D041133D222CAB36003032F1 /* PMViewUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D0411344222CAD4F003032F1 /* ViewData */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewData;
+			sourceTree = "<group>";
+		};
 		D0D49CE0222CA7C900CF1B91 = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +98,8 @@
 		D0D49CEB222CA7C900CF1B91 /* MyPlayground */ = {
 			isa = PBXGroup;
 			children = (
+				D0411343222CAD39003032F1 /* Utils */,
+				D0411342222CAD27003032F1 /* Demo */,
 				D0D49CEC222CA7C900CF1B91 /* AppDelegate.h */,
 				D0D49CED222CA7C900CF1B91 /* AppDelegate.m */,
 				D0D49CF2222CA7C900CF1B91 /* Main.storyboard */,
@@ -75,8 +111,6 @@
 				D0D49D03222CA7F800CF1B91 /* PMMainViewController.m */,
 				D0D49D05222CA83200CF1B91 /* PMMainViewCell.h */,
 				D0D49D06222CA83200CF1B91 /* PMMainViewCell.m */,
-				D0D49D08222CA94700CF1B91 /* PMCollectionViewDemoViewController.h */,
-				D0D49D09222CA94700CF1B91 /* PMCollectionViewDemoViewController.m */,
 			);
 			path = MyPlayground;
 			sourceTree = "<group>";
@@ -152,9 +186,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0D49D07222CA83200CF1B91 /* PMMainViewCell.m in Sources */,
+				D041133E222CAB36003032F1 /* PMViewUtils.m in Sources */,
 				D0D49D0A222CA94700CF1B91 /* PMCollectionViewDemoViewController.m in Sources */,
 				D0D49CFC222CA7CA00CF1B91 /* main.m in Sources */,
 				D0D49D04222CA7F800CF1B91 /* PMMainViewController.m in Sources */,
+				D0411341222CACB1003032F1 /* PMCollectionViewDemoCell.m in Sources */,
 				D0D49CEE222CA7C900CF1B91 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

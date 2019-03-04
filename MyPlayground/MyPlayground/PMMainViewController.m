@@ -9,6 +9,7 @@
 #import "PMMainViewController.h"
 #import "PMMainViewCell.h"
 #import "PMCollectionViewDemoViewController.h"
+#import "PMViewUtils.h"
 
 @interface PMMainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -35,11 +36,7 @@
     tableView.delegate = self;
 
     tableView.translatesAutoresizingMaskIntoConstraints = NO;
-    NSLayoutConstraint *const topConstraint = [tableView.topAnchor constraintEqualToAnchor:self.view.topAnchor];
-    NSLayoutConstraint *const leadingConstraint = [tableView.leadingAnchor constraintEqualToAnchor:self.view.leadingAnchor];
-    NSLayoutConstraint *const widthConstraint = [tableView.widthAnchor constraintEqualToAnchor:self.view.widthAnchor];
-    NSLayoutConstraint *const heightConstraint = [tableView.heightAnchor constraintEqualToAnchor:self.view.heightAnchor];
-    [NSLayoutConstraint activateConstraints:@[topConstraint, leadingConstraint, widthConstraint, heightConstraint]];
+    [PMViewUtils pinView:tableView ToView:self.view];
 
     [tableView registerClass:[PMMainViewCell class] forCellReuseIdentifier:@"PMMainViewCell"];
 }
