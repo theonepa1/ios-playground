@@ -8,6 +8,7 @@
 
 #import "PMMainViewController.h"
 #import "PMMainViewCell.h"
+#import "PMCollectionViewDemoViewController.h"
 
 @interface PMMainViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -43,6 +44,8 @@
     [tableView registerClass:[PMMainViewCell class] forCellReuseIdentifier:@"PMMainViewCell"];
 }
 
+#pragma mark - UITableViewDataSource
+
 - (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
     UITableViewCell *const cell = [tableView dequeueReusableCellWithIdentifier:@"PMMainViewCell" forIndexPath:indexPath];
     cell.textLabel.text = self.options[indexPath.row];
@@ -51,6 +54,24 @@
 
 - (NSInteger)tableView:(nonnull UITableView * __unused)tableView numberOfRowsInSection:(__unused NSInteger)section {
     return [self.options count];
+}
+
+#pragma mark - UITableViewDelegate
+
+- (void)tableView:(UITableView * __unused)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [self didSelectOptionAtIndex:indexPath.row];
+}
+
+#pragma mark - Private methods
+
+- (void)didSelectOptionAtIndex:(NSUInteger)index {
+    switch (index) {
+        case 0: {
+            PMCollectionViewDemoViewController *const collectionViewDemoVC = [[PMCollectionViewDemoViewController alloc] init];
+            [self.navigationController pushViewController:collectionViewDemoVC animated:YES];
+            break;
+        }
+    }
 }
 
 @end

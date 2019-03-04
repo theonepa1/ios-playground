@@ -1,5 +1,5 @@
 //
-//  PMMainViewCellTableViewCell.h
+//  PMCollectionViewDemoViewController.h
 //  MyPlayground
 //
 //  Created by Pavan Mellamputi on 3/3/19.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface PMMainViewCell : UITableViewCell
+@interface PMCollectionViewDemoViewController : UIViewController
 
 @end
-
-NS_ASSUME_NONNULL_END

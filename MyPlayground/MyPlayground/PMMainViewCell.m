@@ -1,5 +1,5 @@
 //
-//  PMMainViewCell.m
+//  PMMainViewCellTableViewCell.m
 //  MyPlayground
 //
 //  Created by Pavan Mellamputi on 3/3/19.
