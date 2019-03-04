@@ -7,23 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0534A5A222C9FC100037DFA /* PMMainViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D0534A59222C9FC100037DFA /* PMMainViewCell.m */; };
 		D0F87BA2222C9C1300ABA2BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F87BA1222C9C1300ABA2BA /* AppDelegate.m */; };
-		D0F87BA5222C9C1300ABA2BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F87BA4222C9C1300ABA2BA /* ViewController.m */; };
-		D0F87BA8222C9C1300ABA2BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F87BA6222C9C1300ABA2BA /* Main.storyboard */; };
+		D0F87BA5222C9C1300ABA2BA /* PMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F87BA4222C9C1300ABA2BA /* PMMainViewController.m */; };
 		D0F87BAA222C9C1500ABA2BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F87BA9222C9C1500ABA2BA /* Assets.xcassets */; };
-		D0F87BAD222C9C1500ABA2BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F87BAB222C9C1500ABA2BA /* LaunchScreen.storyboard */; };
 		D0F87BB0222C9C1500ABA2BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D0F87BAF222C9C1500ABA2BA /* main.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D0534A58222C9FC100037DFA /* PMMainViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMMainViewCell.h; sourceTree = "<group>"; };
+		D0534A59222C9FC100037DFA /* PMMainViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMMainViewCell.m; sourceTree = "<group>"; };
 		D0F87B9D222C9C1200ABA2BA /* MyPlayground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPlayground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F87BA0222C9C1300ABA2BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D0F87BA1222C9C1300ABA2BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D0F87BA3222C9C1300ABA2BA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D0F87BA4222C9C1300ABA2BA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D0F87BA7222C9C1300ABA2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D0F87BA3222C9C1300ABA2BA /* PMMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PMMainViewController.h; sourceTree = "<group>"; };
+		D0F87BA4222C9C1300ABA2BA /* PMMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PMMainViewController.m; sourceTree = "<group>"; };
 		D0F87BA9222C9C1500ABA2BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D0F87BAC222C9C1500ABA2BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0F87BAE222C9C1500ABA2BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D0F87BAF222C9C1500ABA2BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,13 +59,13 @@
 			children = (
 				D0F87BA0222C9C1300ABA2BA /* AppDelegate.h */,
 				D0F87BA1222C9C1300ABA2BA /* AppDelegate.m */,
-				D0F87BA3222C9C1300ABA2BA /* ViewController.h */,
-				D0F87BA4222C9C1300ABA2BA /* ViewController.m */,
-				D0F87BA6222C9C1300ABA2BA /* Main.storyboard */,
+				D0F87BA3222C9C1300ABA2BA /* PMMainViewController.h */,
+				D0F87BA4222C9C1300ABA2BA /* PMMainViewController.m */,
 				D0F87BA9222C9C1500ABA2BA /* Assets.xcassets */,
-				D0F87BAB222C9C1500ABA2BA /* LaunchScreen.storyboard */,
 				D0F87BAE222C9C1500ABA2BA /* Info.plist */,
 				D0F87BAF222C9C1500ABA2BA /* main.m */,
+				D0534A58222C9FC100037DFA /* PMMainViewCell.h */,
+				D0534A59222C9FC100037DFA /* PMMainViewCell.m */,
 			);
 			path = MyPlayground;
 			sourceTree = "<group>";
@@ -128,9 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F87BAD222C9C1500ABA2BA /* LaunchScreen.storyboard in Resources */,
 				D0F87BAA222C9C1500ABA2BA /* Assets.xcassets in Resources */,
-				D0F87BA8222C9C1300ABA2BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,32 +138,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0F87BA5222C9C1300ABA2BA /* ViewController.m in Sources */,
+				D0534A5A222C9FC100037DFA /* PMMainViewCell.m in Sources */,
+				D0F87BA5222C9C1300ABA2BA /* PMMainViewController.m in Sources */,
 				D0F87BB0222C9C1500ABA2BA /* main.m in Sources */,
 				D0F87BA2222C9C1300ABA2BA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		D0F87BA6222C9C1300ABA2BA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0F87BA7222C9C1300ABA2BA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D0F87BAB222C9C1500ABA2BA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0F87BAC222C9C1500ABA2BA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		D0F87BB1222C9C1500ABA2BA /* Debug */ = {
@@ -294,7 +273,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pli.MyPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -311,7 +290,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = pli.MyPlayground;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PMMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    PMMainViewController *const viewController = [[PMMainViewController alloc] init];
+    self.window.rootViewController = viewController;
+    viewController.view.frame = self.window.frame;
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 
