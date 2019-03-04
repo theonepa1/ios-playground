@@ -13,6 +13,7 @@
 @interface PMCollectionViewDemoViewController () <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 @property (nonatomic, strong, nonnull) NSMutableArray<NSString *> *items;
+@property (nonatomic, strong, nonnull) NSMutableArray<NSNumber *> *itemHeights;
 
 @end
 
@@ -21,6 +22,9 @@
 - (instancetype)init {
     if (self = [super initWithNibName:nil bundle:nil]) {
         _items = [[NSMutableArray alloc] initWithArray:@[@"Mt. Everest", @"Kilimanjaro"]];
+        _itemHeights = [[NSMutableArray alloc] init];
+        [_itemHeights addObject:[NSNumber numberWithFloat:50.0]];
+        [_itemHeights addObject:[NSNumber numberWithFloat:50.0]];
     }
     return self;
 }
@@ -47,9 +51,9 @@
 #pragma mark - UICollectionViewDataSource
 
 - (CGSize)collectionView:(UICollectionView *)collectionView
-                  layout:(UICollectionViewLayout *)collectionViewLayout
+                  layout:(UICollectionViewLayout * __unused)collectionViewLayout
   sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
-    return CGSizeMake(UIScreen.mainScreen.bounds.size.width, 50);
+    return CGSizeMake(collectionView.bounds.size.width, self.itemHeights[indexPath.row].floatValue);
 }
 
 #pragma mark - UICollectionViewDelegate
@@ -66,6 +70,11 @@
 - (NSInteger)collectionView:(nonnull UICollectionView *)collectionView
      numberOfItemsInSection:(NSInteger)section {
     return [self.items count];
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    self.itemHeights[indexPath.row] = [NSNumber numberWithFloat:100.0];
+    [collectionView reloadData];
 }
 
 @end

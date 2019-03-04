@@ -20,6 +20,11 @@
     if (self = [super initWithFrame:frame]) {
         _label = [[UILabel alloc] initWithFrame:CGRectZero];
         [self.contentView addSubview:_label];
+        _label.translatesAutoresizingMaskIntoConstraints = NO;
+        NSLayoutConstraint *const bottomConstraint = [self.bottomAnchor constraintEqualToAnchor:_label.bottomAnchor];
+        NSLayoutConstraint *const trailingConstraint = [self.trailingAnchor constraintEqualToAnchor:_label.trailingAnchor];
+        [NSLayoutConstraint activateConstraints:@[bottomConstraint, trailingConstraint]];
+        self.layer.masksToBounds = YES;
     }
     return self;
 }
