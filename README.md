@@ -7,3 +7,4 @@
 * Archiving and serialization https://developer.apple.com/documentation/foundation/archives_and_serialization?language=objc
 * Customizing transitions https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/CustomizingtheTransitionAnimations.html
 * Handling rotations
+* Networking basics 
