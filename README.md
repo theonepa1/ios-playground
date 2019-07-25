@@ -7,7 +7,7 @@
 * Networking basics 
 ### UI Development
 * UIView and CALayer
-* UIControls - button, textfield/view, label (string and attributed string), switch, image view, https://developer.apple.com/documentation/uikit/views_and_controls?language=objc
+* UIControls - button, textfield/view, label (string and attributed string), switch, image view, tab bar item, navigation bar, https://developer.apple.com/documentation/uikit/views_and_controls?language=objc
 * Events https://developer.apple.com/documentation/uikit/touches_presses_and_gestures/using_responders_and_the_responder_chain_to_handle_events?language=objc
 * Basics of Auto Layout
 * Handling rotations
@@ -15,8 +15,7 @@
 * I18n (Left to Right)
 * Animations (Key based animations)
 * View Controller custom presentations and transitions https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/CustomizingtheTransitionAnimations.html
-* Navigation bar - customization
-* UITabBarItem
+* View controller custom push transitions (and edge swipes)
 * Safe Area
 * A11y
 * Collection views - custom layout
